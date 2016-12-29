@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <title>COP 4813: Internet Programming</title>
+    <link rel="stylesheet" href="../normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assign1/style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <script src="main.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+</head>
+  
+<body>
+	<header>
+		<a href="../index.html" id="logo" id="top">
+			<h1>Assignment 2: JavaScript Creating a Form</h1>
+			<h2 id="mid">Andy Nguyen</h2>
+			<h2 id="right">Return to ePortfolio<h2>
+		</a>
+	</header>
+
+    <ul id="assignment2">
+    	<li>
+			<div class="assignment2">
+				<h1 class="order-form"> Coffee Order Form</h1>
+				<h2><a href ="flowchart.jpg" target="_blank">Click to view flowchart</a>
+				<form id="Form">
+					<fieldset>
+						<legend>Information</legend>
+							<div class="info">
+								<label for="firstname">First Name</label>
+								<br>
+								<input id="firstname" type="text" name="firstname">
+								<br>
+								<label for="contact">Contact Number</label>
+								<br>
+								<input id="contact" type="tel" name="contact">
+							</div>
+							<div class="info">
+								<label for="lastname">Last Name</label>
+								<br>
+								<input id="lastname" type="text" name="lastname">
+								<br>
+								<label for="email">Email</label>
+								<br>
+								<input id="e-mail" type="email" name="email">
+							</div>
+					</fieldset>
+					<fieldset>
+						<legend>Coffee</legend>
+							<div class="info">
+								<label><u>Type</u></label>
+									<br>
+									<input type="radio" name="type" id="type" value="coffee" checked="true">Coffee
+									<br>
+									<input type="radio" name="type" id="type" value="espresso">Espresso
+									<br>
+									<input type="radio" name="type" id="type" value="macchiato">Macchiato
+									<br>
+									<input type="radio" name="type" id="type" value="cappuccino">Cappuccino
+									<br>
+									<input type="radio" name="type" id="type" value="latte">Latte
+									<br>
+									<input type="radio" name="type" id="type" value="americano">Americano
+									<br>
+									<input type="radio" name="type" id="type" value="pourover">Pour Over
+									<br>
+									<input type="radio" name="type" id="type" value="chemex">Chemex
+							</div>
+							<div class="info">
+								<label><u>Size</u></label>
+									<br>
+									<input type="radio" name="size" id="size" value="small" checked="true">Small
+										<br>
+									<input type="radio" name="size" id="size" value="medium">Medium
+										<br>
+									<input type="radio" name="size" id="size" value="large">Large
+							</div>
+							<div class="info">
+								<label><u>Beans</u></label>
+									<br>
+									<select name="bean" id="bean1">
+										<option value="default"></option>
+										<option value="light">El Gallo Organic (Light)</option>
+										<option value="medium">Cliff Hanger (Medium)</option>
+										<option value="dark">El Diablo (Dark)</option>
+										<option value="decaf">Librarian's Blend (Decaf)</option>
+									</select>
+							</div>
+							<div class="info">
+								<label><u>Extras</u></label>
+									<br>
+									<input type="checkbox" /><label>Extra Shot</label>
+									<br>
+								    <input type="checkbox" /><label>Almond/Soy</label>
+								    <br>
+								    <input type="checkbox" /><label>Handmade Syrups</label>
+								    <br>
+								    <input type="checkbox" /><label>Honey</label>
+							</div>
+					</fieldset>
+					<fieldset>
+						<legend>Comments or Instructions?</legend>
+							<div>
+								<textarea rows="4" cols="50"></textarea>
+							</div>
+					</fieldset>
+				</form>	
+				<div class="button-section">
+					<button id="button" onclick="submit()">Submit</button>
+					<button id="button"  onclick="reset()">Reset</button>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+
+  <footer>
+    <p id="backtotop"> <a href="#top">Back to Top</a><p>
+    <a href="Http://twitter.com/andyn92" target="_blank"><img src="../assign1/img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+    <a href="http://facebook.com/andynguyen904" target="_blank"><img src="../assign1/img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+    <p>&copy; 2015 Andy Nguyen.</p>
+  </footer>
+</body>
+
+
+</html>

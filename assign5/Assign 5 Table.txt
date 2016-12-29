@@ -1,0 +1,27 @@
+CREATE TABLE Employee (
+	employeeID		INT(4) NOT NULL AUTO_INCREMENT,
+	firstName		Varchar(50) NOT NULL,
+	lastName		Varchar(50) NOT NULL,
+	department		Varchar(50),
+	phone			Char(10),
+	email  			Varchar(100),
+	gender			char(1),
+	manager			char(1)
+	);
+
+	INSERT INTO Employee(firstName, lastName, department, phone, email, gender, manager) VALUES ('Hal', 'Jalikakik', 'operations', '5555553431','kickhal@comcast.com', 'M', 'yes');
+
+	INSERT INTO Employee (firstName, lastName, department, phone, email, gender, manager) VALUES ('John', 'Doe', 'dispatch', '9043365456','notbamby@comcast.com', 'M', '0');
+
+	INSERT INTO Employee (firstName, lastName, department, phone, email, gender, manager) VALUES ('Sheryl', 'Siemens', 'sales', '4546674321', 'ss@gmail.com', 'F', '1');
+
+	INSERT INTO Employee (firstName, lastName, department, phone, email, gender, manager) VALUES ('Steve','Jamba', 'operations','9995554563','stevejamba@gmail.com','M', '0');
+
+	
+
+
+
+departments
+operations
+sales
+dispatch
